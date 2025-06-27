@@ -1,0 +1,213 @@
+/* E-Salon Özel Stil Dosyası */
+
+/* Genel stiller */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+a {
+    transition: color 0.3s ease;
+}
+
+.btn {
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #0066cc;
+    border-color: #0066cc;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #0055aa;
+    border-color: #0055aa;
+}
+
+.btn-outline-primary {
+    color: #0066cc;
+    border-color: #0066cc;
+}
+
+.btn-outline-primary:hover {
+    background-color: #0066cc;
+    border-color: #0066cc;
+}
+
+/* Header ve Navbar */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #0066cc;
+}
+
+.navbar-nav .nav-link.active {
+    color: #0066cc;
+    font-weight: 500;
+}
+
+/* Kartlar ve kutu gölgeleri */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.card:hover {
+    box-shadow: 0 7px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+}
+
+.card-header {
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+}
+
+/* Form elemanları */
+.form-control {
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    padding: 0.6rem 1rem;
+}
+
+.form-control:focus {
+    border-color: #0066cc;
+    box-shadow: 0 0 0 0.25rem rgba(0, 102, 204, 0.15);
+}
+
+/* Özel renkler */
+.bg-primary {
+    background-color: #0066cc !important;
+}
+
+.text-primary {
+    color: #0066cc !important;
+}
+
+/* Footer stili */
+footer {
+    border-top: 1px solid #e9ecef;
+}
+
+/* Animasyonlar */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Uyarı kutuları */
+.alert {
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Paket kartları için özel stiller */
+.card.package-card {
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.card.package-card:hover {
+    border-color: #0066cc;
+}
+
+.package-card .card-price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0066cc;
+}
+
+.package-card .card-price-period {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Eğitmen kartları için özel stiller */
+.trainer-image {
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Program tablosu için özel stiller */
+.program-table th, .program-table td {
+    vertical-align: middle;
+}
+
+.program-event {
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.event-yoga {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.event-pilates {
+    background-color: #cfe2ff;
+    color: #0a58ca;
+}
+
+.event-fitness {
+    background-color: #f8d7da;
+    color: #b02a37;
+}
+
+.event-zumba {
+    background-color: #fff3cd;
+    color: #997404;
+}
+
+/* Mobil cihazlar için düzenlemeler */
+@media (max-width: 767.98px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .table-responsive {
+        font-size: 0.9rem;
+    }
+    
+    .card-title {
+        font-size: 1.25rem;
+    }
+}
+
+/* Tablet ve daha büyük cihazlar için düzenlemeler */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .card-deck .card {
+        flex: 0 0 calc(50% - 30px);
+    }
+}
+
+/* Custom loading spinner */
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(0, 102, 204, 0.1);
+    border-radius: 50%;
+    border-left-color: #0066cc;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+} 
